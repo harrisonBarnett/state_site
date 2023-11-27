@@ -13,6 +13,8 @@ body {
 }
 
 #page {
+    position: relative;
+    padding-bottom: 4rem;
     width: 1200px;
     min-height: 100vh;
     display: flex;
@@ -108,8 +110,12 @@ section, aside {
 }
 
 footer {
-    margin-top: auto;
-    width: 100%;
+    /* margin-top: auto;
+    width: 100%; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: .5rem 0;
     background: #313d7d;
 }
@@ -120,6 +126,18 @@ footer > div {
     opacity: .5;
 }
 
+/* home */
+#welcome-img {
+    width: 75%;
+    max-width: 1200px;
+}
+
+/* city page */
+aside > img {
+    height: 150px;
+    width: 150px;
+}
+
 /* cities */
 .cities-content {
     display: flex;
@@ -127,9 +145,9 @@ footer > div {
     gap: 1rem;
 }
 
-.cities-content > ul {
+.cities-content > ol {
     width: fit-content;
-    list-style: none;
+    margin-left: 1rem;
     
     line-height: 1.5rem;
 }
