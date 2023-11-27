@@ -1,0 +1,52 @@
+<!DOCTYdivE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../global/styles.css" />
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <header>
+                <h1>Contact</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <a href="../index.html" data="Home"><li>Home</li></a>
+                    <a href="./cities.html" data="Cities"><li>Cities</li></a>
+                    <a href="./programs.html" data="Programs"><li>Programs</li></a>
+                    <a href="./contact.html" data="Contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </div>
+
+
+        <main class="content contact-content">
+           <form>
+            <label for="firstname">First Name</label>
+            <input name="firstname" type="text" />
+            <label for="lastname">Last Name</label>
+            <input name="lastname" type="text" />
+            <label for="email">Email</label>
+            <input name="email" type="text" />
+            <label for="cnfemail">Confirm email</label>
+            <input name="cnfemail" type="text" />
+            <button type="submit">Submit</button>
+           </form>
+        </main>
+
+        <footer><div>Copyright 2023 Sunny Solutions Inc.</div></footer>
+    </div>
+    <script>
+        let current = document.title;
+        console.log(current);
+        let foo = document.querySelector(`[data="${current}"]`);
+        foo.style.backgroundColor = '#bdc8ff';
+        foo.style.color = "#313d7d";
+    </script>
+</body>
+</html>
