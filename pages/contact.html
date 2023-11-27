@@ -26,15 +26,25 @@
 
 
         <main class="content contact-content">
-           <form>
-            <label for="firstname">First Name</label>
-            <input name="firstname" type="text" />
-            <label for="lastname">Last Name</label>
-            <input name="lastname" type="text" />
-            <label for="email">Email</label>
-            <input name="email" type="text" />
-            <label for="cnfemail">Confirm email</label>
-            <input name="cnfemail" type="text" />
+           <form onsubmit="checkEmail()">
+            <h2>Get In Touch:</h2>
+            <br />
+            <div>
+                <label for="firstname">First Name</label>
+                <input name="firstname" type="text" />
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input name="lastname" type="text" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input name="email" type="text" />
+            </div>
+            <div>
+                <label for="cnfemail">Confirm Email</label>
+                <input name="cnfemail" type="text"/>
+            </div>
             <button type="submit">Submit</button>
            </form>
         </main>
@@ -42,11 +52,26 @@
         <footer><div>Copyright 2023 Sunny Solutions Inc.</div></footer>
     </div>
     <script>
-        let current = document.title;
-        console.log(current);
-        let foo = document.querySelector(`[data="${current}"]`);
-        foo.style.backgroundColor = '#bdc8ff';
-        foo.style.color = "#313d7d";
+        const current = document.title;
+        const tab = document.querySelector(`[data="${current}"]`);
+        tab.style.backgroundColor = '#bdc8ff';
+        tab.style.color = "#313d7d";
+
+        ///////////////////////////
+        function checkEmail() {
+            const email = document.querySelector(`[name="email"]`).value;
+            const confirmation = document.querySelector(`[name="cnfemail"]`).value;
+            if(email !== confirmation) {
+                alert("ERROR ERROR ERROR EMAILS DO NOT MATCH ERROR ERROR ERROR");
+            }
+        }
+
+        
+        
+    </script>
+
+    <script>
+
     </script>
 </body>
 </html>

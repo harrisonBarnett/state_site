@@ -122,30 +122,63 @@ footer > div {
 
 /* cities */
 .cities-content {
-    border: 1px solid red;
-
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-tr, td {
-    border: 1px solid black;
+.cities-content > ul {
+    width: fit-content;
+    list-style: none;
+    
+    line-height: 1.5rem;
 }
 
 /* contact */
 .contact-content {
-    border: 1px solid red;
-
+    display: flex;
+    justify-content: center;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 2px rgba(0 0 0 / .25);
 }
-
-form {
+.contact-content > section {
     width: 100%;
+    padding: 0;
+}
+form {
+    width: 50%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    gap: .5rem;
+}
+
+form > div {
+    display: flex;
+}
+form > div > input  {
+    width: 60%;
+    margin-left: auto;
+}
+
+button {
+    margin-left: auto;
+    width: 25%;
+}
+
+/* programs */
+.programs-content > section {
+    width: 100%;
+    padding: 0;
+}
+table {
+    width: 100%;
+}
+
+tr, th, td {
+    padding: .25rem;
+}
+
+th, tr:nth-child(even){
+    background: #bdc8ff;
 }
