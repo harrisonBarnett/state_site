@@ -1,7 +1,6 @@
 *, ::before, ::after {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -74,6 +73,7 @@ nav > ul > a {
     font-size: 1.25rem;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 
 nav > ul > a:hover {
@@ -160,7 +160,6 @@ aside > img {
 
 /* contact */
 .contact-content {
-
     display: flex;
     justify-content: center;
     background: #f9f9f9;
@@ -175,6 +174,7 @@ aside > img {
 
 .contact-content > div > ol {
     line-height: 1.5rem;
+    margin-left: 1rem;
 }
 
 .contact-content > div, form {
@@ -214,4 +214,10 @@ tr, th, td {
 
 th, tr:nth-child(even){
     background: #bdc8ff;
+}
+
+/* sources */
+.sources-content > ul {
+    line-height: 1.5rem;
+    margin-left: 1rem;
 }

@@ -1,0 +1,66 @@
+<!DOCTYdivE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources</title>
+    <link rel="stylesheet" href="../global/styles.css" />
+</head>
+<body>
+    <div id="page">
+        <div id="header-container">
+            <header>
+                <h1>Sources</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <a href="../index.html" data="Home"><li>Home</li></a>
+                    <a href="./cities.html" data="Cities"><li>Cities</li></a>
+                    <a href="./programs.html" data="Programs"><li>Programs</li></a>
+                    <a href="./contact.html" data="Contact"><li>Contact</li></a>
+                    <a href="./sources.html" data="Sources"><li>Sources</li></a>
+                </ul>
+            </nav>
+        </div>
+
+
+        <main class="content sources-content">
+            <h2>Sources:</h2>
+            <br/>
+            <ul>
+                <li>
+                    <p>Wikipedia contributors. (2023, November 28).</p>
+                    <p>South Carolina. Wikipedia.</p>
+                    <a href="https://en.wikipedia.org/wiki/South_Carolina" target="_blank">https://en.wikipedia.org/wiki/South_Carolina</a>
+                </li>
+                <li>
+                    <p>Wikipedia contributors. (2023, November 12).</p>
+                    <p>Anderson, South Carolina. Wikipedia.</p>
+                    <a href="https://en.wikipedia.org/wiki/Anderson,_South_Carolina" target="_blank">https://en.wikipedia.org/wiki/Anderson,_South_Carolina</a>
+                </li>
+                <li>
+                    <p>Wikipedia contributors. (2023, November 29).</p>
+                    <p>Columbia, South Carolina. Wikipedia.</p>
+                    <a href="https://en.wikipedia.org/wiki/Columbia,_South_Carolina" target="_blank">https://en.wikipedia.org/wiki/Columbia,_South_Carolina</a>
+                </li>
+                <li>
+                    <p>Wikipedia contributors. (2023, November 28).</p>
+                    <p>Spartanburg, South Carolina. Wikipedia.</p>
+                    <a href="https://en.wikipedia.org/wiki/Spartanburg,_South_Carolina" target="_blank">https://en.wikipedia.org/wiki/Spartanburg,_South_Carolina</a>
+                </li>
+            </ul>
+        </main>
+
+        <footer><div>Copyright 2023 Sunny Solutions Inc.</div></footer>
+    </div>
+    <script>
+        let current = document.title;
+        console.log(current);
+        let foo = document.querySelector(`[data="${current}"]`);
+        foo.style.backgroundColor = '#bdc8ff';
+        foo.style.color = "#313d7d";
+    </script>
+</body>
+</html>
